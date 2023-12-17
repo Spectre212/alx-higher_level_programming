@@ -6,6 +6,5 @@ if __name__ == "__main__":
 
     m = 1
     n = 2
-    sum_result = add(m, n)
-
-    print("{} + {} = {}".format(m, n, sum_result))
+    
+    print("{} + {} = {}".format(m, n, add(m,n)))
