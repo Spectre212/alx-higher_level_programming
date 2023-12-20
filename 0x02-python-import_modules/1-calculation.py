@@ -4,18 +4,18 @@ if __name__ == "__main__":
     """Print the sum, difference, product, and quotient of 10 and 5."""
     from calculator_1 import add, sub, mul, div
 
-    num1 = 10
-    num2 = 5
+    a = 10
+    b = 5
 
-    sum_result = add(num1, num2)
-    diff_result = sub(num1, num2)
-    product_result = mul(num1, num2)
+    sum_result = add(a, b)
+    diff_result = sub(a, b)
+    product_result = mul(a, b)
 
     try:
-        quotient_result = div(num1, num2)
-        print("{} + {} = {}".format(num1, num2, sum_result))
-        print("{} - {} = {}".format(num1, num2, diff_result))
-        print("{} * {} = {}".format(num1, num2, product_result))
-        print("{} / {} = {}".format(num1, num2, quotient_result))
+        quotient_result = div(a, b)
+        print("{} + {} = {}".format(a, b, sum_result))
+        print("{} - {} = {}".format(a, b, diff_result))
+        print("{} * {} = {}".format(a, b, product_result))
+        print("{} / {} = {}".format(a, b, quotient_result))
     except ZeroDivisionError:
         print("Cannot divide by zero.")
