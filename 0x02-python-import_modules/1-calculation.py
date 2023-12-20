@@ -7,15 +7,15 @@ if __name__ == "__main__":
     a = 10
     b = 5
 
-    sum_result = add(a, b)
+"""    sum_result = add(a, b)
     diff_result = sub(a, b)
-    product_result = mul(a, b)
+    product_result = mul(a, b)"""
 
     try:
-        quotient_result = div(a, b)
-        print("{} + {} = {}".format(a, b, sum_result))
-        print("{} - {} = {}".format(a, b, diff_result))
-        print("{} * {} = {}".format(a, b, product_result))
-        print("{} / {} = {}".format(a, b, quotient_result))
+        """quotient_result = div(a, b)"""
+        print("{} + {} = {}".format(a, b, add(a,b)))
+        print("{} - {} = {}".format(a, b, sub(a,b)))
+        print("{} * {} = {}".format(a, b, mul(a,b)))
+        print("{} / {} = {}".format(a, b, div(a,b)))
     except ZeroDivisionError:
         print("Cannot divide by zero.")
